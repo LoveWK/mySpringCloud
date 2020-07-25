@@ -1,0 +1,23 @@
+package com.wk.controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RestController
+public class PowerController {
+
+
+    @RequestMapping("/getPower.do")
+    public Object getPoser(){
+        Map<String,Object> map = new HashMap<>();
+        map.put("key","power");
+        /*int h = 1;
+        int m = h/0;
+        System.out.println(m);*/
+        return map;
+    }
+
+}
